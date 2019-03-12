@@ -113,6 +113,10 @@ hr {
 	background-color: black;
 }
 
+.middle-img {
+	width: 100%;
+}
+
 section {
 	display: flex;
 	justify-content: space-around;
@@ -131,6 +135,7 @@ section {
 	width: 876px;
 	height: 100%;
 	margin: 0 auto;
+	padding: 10px;
 }
 
 footer {
@@ -142,6 +147,23 @@ footer {
 	margin: 50px auto;
 }
 
+
+
+/* 	900px break point 	*/
+/*///////////////////////*/
+@media(max-width: 900px) {
+	.container {
+		width: 800px;
+	}
+
+	.middle-img {
+		width: 100%;
+	}
+}
+
+
+/*/////////////////////////////*/
+/*	800px break point 	*/
 @media(max-width: 800px) {
 	#header-img {
 		display: none;
@@ -179,11 +201,16 @@ footer {
 	}
 }
 
+
+
+/* 	500px break point 	*/
+/*////////////////////////////*/
 @media(max-width: 500px) {
 	nav {
 		display: flex;
 		flex-direction: column; 
 		flex-wrap: nowrap;
+		margin-top: 0px;
 	}
 
 	nav a {
@@ -201,5 +228,20 @@ footer {
 	.logo {
 		margin: 10px auto;
 	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+	}
+
+	section div {
+		margin-bottom: 20px;
+	}
+
+	/*.container {
+		padding-top: 0px;
+	}*/
+
+
 
 }
