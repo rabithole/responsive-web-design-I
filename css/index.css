@@ -108,6 +108,11 @@ header button {
 	background-color: white;
 }
 
+hr {
+	height: 3px;
+	background-color: black;
+}
+
 section {
 	display: flex;
 	justify-content: space-around;
@@ -150,26 +155,27 @@ footer {
 		margin: 0 auto;
 	}
 
-	.middle-img {
-		width: 100%;
-	}
 	nav {
 		display: flex;
-		flex-direction: column;
-		/*justify-content: space-around;*/
+		flex-wrap: wrap;
+		
 		margin: 40px 0 60px 0;
 	}
 
 	.logo {
 		order: 1;
 		width: 180px;
-		margin: auto;
+		margin: 0 50% 30px 50%;
 	}
 
 	nav a {
 		margin: auto;
 		order: 2;
 		
+	}
+
+	.middle-img {
+		width: 100%;
 	}
 }
 
